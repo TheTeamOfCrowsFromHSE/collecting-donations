@@ -30,9 +30,9 @@ public class EventHandler extends TextWebSocketHandler implements WebSocketHandl
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        Long id = Long.valueOf(message.getPayload());
-        TextMessage text = db.getNotDisplayedTransactions(id);
-        session.sendMessage(text);
+//        Long id = Long.valueOf(message.getPayload());
+//        TextMessage text = db.getNotDisplayedTransactions(id);
+//        session.sendMessage(text);
     }
 
     @Override
