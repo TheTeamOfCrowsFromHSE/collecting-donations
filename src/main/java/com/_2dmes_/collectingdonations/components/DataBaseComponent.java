@@ -45,7 +45,8 @@ public class DataBaseComponent {
         return "-1";
     }
 
-    public TextMessage getNotDisplayedTransactions(Long idLastDisplayedTransaction) throws JsonProcessingException {
+    public TextMessage getNotDisplayedTransactions(Long idStreamer, Long idLastDisplayedTransaction) throws JsonProcessingException {
+        //ArrayList<Transaction> transactions = (ArrayList<Transaction>) transactionRepository.findAllByCode( idStreamer);
         ArrayList<Transaction> transactions = (ArrayList<Transaction>) transactionRepository.findAll();
         ArrayList<Transaction> selection = new ArrayList<>();
         for (Transaction transaction : transactions) {
