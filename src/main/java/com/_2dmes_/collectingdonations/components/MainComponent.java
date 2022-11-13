@@ -1,5 +1,6 @@
 package com._2dmes_.collectingdonations.components;
 
+import com._2dmes_.collectingdonations.websocket.EventHandler;
 import org.springframework.stereotype.Component;
 import org.springframework.context.event.EventListener;
 import com._2dmes_.collectingdonations.models.Transaction;
@@ -25,7 +26,7 @@ public class MainComponent {
     public void start() {
         Runnable task = () -> {
             while (true) {
-                System.out.println("Check new transaction");
+                //System.out.println("Check new transaction");
                 try {
                     Pair<Boolean, List<Transaction>> transactions = DataBaseComponent.checkNewTransactions(transactionRepository);
                     if (transactions.getKey()) {

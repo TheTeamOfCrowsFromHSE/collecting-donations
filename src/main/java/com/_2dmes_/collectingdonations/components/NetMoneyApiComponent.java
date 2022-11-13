@@ -15,7 +15,7 @@ public class NetMoneyApiComponent {
         HHTPComponent.createHeaders();
         HHTPComponent.createRequest();
         ResponseEntity<String> response = HHTPComponent.getResponse();
-        System.out.println(response);
+        //System.out.println(response);
 
         String dataJSON = response.getBody();
 
