@@ -1,5 +1,6 @@
 package com._2dmes_.collectingdonations.components;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 import org.apache.tomcat.util.json.ParseException;
 import com._2dmes_.collectingdonations.models.Transaction;
@@ -7,9 +8,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import com._2dmes_.collectingdonations.repositories.TransactionRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javafx.util.Pair;
+import org.springframework.web.socket.TextMessage;
 
 @Component
 public class DataBaseComponent {
@@ -40,5 +43,18 @@ public class DataBaseComponent {
             return transaction.getIdTransaction();
         }
         return "-1";
+    }
+
+    public TextMessage getNotDisplayedTransactions(Long idLastDisplayedTransaction) throws JsonProcessingException {
+        ArrayList<Transaction> transactions = (ArrayList<Transaction>) transactionRepository.findAll();
+        ArrayList<Transaction> selection = new ArrayList<>();
+        for (Transaction transaction : transactions) {
+            if (transaction.getId() > idLastDisplayedTransaction) {
+                selection.add(transaction);
+            }
+        }
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writeValueAsString(selection);
+        return new TextMessage(json);
     }
 }

@@ -4,7 +4,9 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ParserJSON {
     public static JSONArray getAllTransactionJSON(String dataJSON) throws ParseException {
         JSONParser parser = new JSONParser();
