@@ -88,7 +88,7 @@ $ npm install --global yarn
 $ npm install yarn
 ```
 ## Run
-1. Build backend code with the help `Maven`.
+1. Build backend code with the help `Maven` and run.
 2. Run frontend code:
 ```
 $ yarn start
