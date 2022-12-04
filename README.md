@@ -20,6 +20,7 @@
 - - [Run](#run)
 - [Frontend](#frontend)
 - [Report](#report)
+- [Demonstration of the prototype](#demonstration-of-the-prototype)
 - [The License](#the-license)
 
 
@@ -108,6 +109,11 @@ If you want to see frontend you should follow to [`another repository`](https://
 # Report
 If you want to see our presentation with which we performed,
 you can find it in [`doc/report`](https://github.com/TheTeamOfCrowsFromHSE/collecting-donations/tree/main/doc/report).
+
+[🔝Table of contents](#table-of-contents)
+
+# Demonstration of the prototype
+You can see how we tested our prototype on YouTube: https://www.youtube.com/watch?v=SeXzcE0J7bU
 
 [🔝Table of contents](#table-of-contents)
 
