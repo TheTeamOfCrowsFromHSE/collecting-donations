@@ -43,11 +43,16 @@ During the hackathon Alfa Bank provided us with tokens for the API service
 On the other streaming platforms, the steps will be similar. \
 If you want to use this tool, you should follow a few steps:
 1. Open `OBS Studio` and add `Browser` into `Sources`.
+
 ![](doc/images/step-1-for-streamers.png)
+
 2. Click `right mouse button` and open `browser features`.
+
 ![](doc/images/step-2-for-streamers.png)
+
 3. Enter url where the plugin is located into `url-address` field. \
 Instead of the `id`, you should substitute the id of the streamer that the `netmonet service` provided to you.
+
 ![](doc/images/step-3-for-streamers.png)
 
 That's all. Now the donations will be displayed on your stream.
@@ -55,7 +60,8 @@ That's all. Now the donations will be displayed on your stream.
 ## For viewers
 If you want to make a donation, you should follow `the link` or `QR-code` that the streamer will give you.
 - Link example: [`https://netmonet.co/tip/236461?mterror=not_found_entity`](https://netmonet.co/tip/236461?mterror=not_found_entity).
-- QR-code example: \
+- QR-code example: 
+
 ![](doc/images/qr.png)
 
 [🔝Table of contents](#table-of-contents)
@@ -89,6 +95,7 @@ $ yarn start
 ```
 4. Follow to url [`http://localhost:3000/plugin/1`](http://localhost:3000/plugin/1). \
 If everything went well, you will see the picture:
+
 ![](doc/images/start-front.png)
 
 [🔝Table of contents](#table-of-contents)
