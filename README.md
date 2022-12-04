@@ -94,7 +94,7 @@ $ npm install yarn
 ```
 $ yarn start
 ```
-4. Follow to url [`http://localhost:3000/plugin/1`](http://localhost:3000/plugin/1). \
+3. Follow to url [`http://localhost:3000/plugin/1`](http://localhost:3000/plugin/1). \
 If everything went well, you will see the picture:
 
 ![](doc/images/start-front.png)
